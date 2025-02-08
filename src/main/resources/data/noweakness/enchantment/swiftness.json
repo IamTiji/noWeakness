@@ -1,0 +1,39 @@
+{
+  "anvil_cost": 1,
+  "description": "신속함",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_speed",
+        "amount": {
+          "type": "minecraft:lookup",
+          "value": 0,
+          "values": [
+            0.8,
+            1.2,
+            1.7,
+            4,
+            20
+          ],
+          "fallback": 64
+        },
+        "operation": "add_value",
+        "id": "swiftness_enchantment"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 10
+}

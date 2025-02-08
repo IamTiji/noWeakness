@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.tiji.noweakness.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemEventsMixin",
+    "EnderDragonBuffMixin",
+    "InitTaskMixin",
+    "ItemUseMixin",
+    "PickupItemMixin",
+    "PlayerPvpMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

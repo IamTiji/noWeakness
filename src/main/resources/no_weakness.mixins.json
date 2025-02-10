@@ -3,11 +3,13 @@
   "package": "com.tiji.noweakness.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ItemEventsMixin",
+    "BaseEntityInvoker",
     "EnderDragonBuffMixin",
     "InitTaskMixin",
+    "ItemEventsMixin",
     "ItemUseMixin",
-    "PickupItemMixin",
+    "LivingEntityInvoker",
+    "PlayerDeathMixin",
     "PlayerPvpMixin"
   ],
   "injectors": {

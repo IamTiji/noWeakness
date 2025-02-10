@@ -95,8 +95,10 @@ public class ItemEventsMixin {
         int count = this.main.stream().filter(itemStack -> itemStack.isOf(Items.TOTEM_OF_UNDYING))
                 .mapToInt(ItemStack::getCount).sum();
 
-        if (count > Constants.MAX_TOTEMS_ALLOWED) {
+        if (count > Constants.MAX_TOTEMS_ALLOWED && !(No.shouldWarnTotem(player.getGameProfile().getId()) || No.shouldKillTotemOwner(player.getGameProfile().getId()))) {
             No.totemTime.put(this.player.getGameProfile().getId(), System.currentTimeMillis());
-        } else No.totemTime.remove(this.player.getGameProfile().getId());
+        } else if (No.totemTime.containsKey(player.getGameProfile().getId()) && count <= Constants.MAX_TOTEMS_ALLOWED){
+            No.totemTime.remove(this.player.getGameProfile().getId());
+        }
     }
 }

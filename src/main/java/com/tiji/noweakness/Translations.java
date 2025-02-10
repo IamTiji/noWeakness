@@ -30,7 +30,7 @@ public class Translations {
             .append(Text.literal("8. ").formatted(Formatting.GOLD))
             .append(Text.literal("드래곤 알은 보상 아이템으로 교환 가능 (/교환 또는 /convert); 다음 중 하나:\n").formatted(Formatting.AQUA))
             .append(Text.literal("   - ").formatted(Formatting.GOLD))
-            .append(Text.literal("풀인첸 겉날개\n").formatted(Formatting.AQUA))
+            .append(Text.literal("풀인첸 겉날게\n").formatted(Formatting.AQUA))
             .append(Text.literal("   - ").formatted(Formatting.GOLD))
             .append(Text.literal("네더라이트 5개\n").formatted(Formatting.AQUA))
             .append(Text.literal("   - ").formatted(Formatting.GOLD))
@@ -46,17 +46,17 @@ public class Translations {
             .append(Text.literal("11. ").formatted(Formatting.GOLD))
             .append(Text.literal("죽을 시 최대 체력이 1칸 줄고 아이템에 체력 아이템이 드롭됨\n").formatted(Formatting.AQUA))
             .append(Text.literal("   - ").formatted(Formatting.GOLD))
-            .append(Text.literal("아이탬을 들고 우클릭해 최대 체력으로 흡수").formatted(Formatting.AQUA))
+            .append(Text.literal("아이템을 들고 우클릭해 최대 체력으로 흡수\n").formatted(Formatting.AQUA))
             .append(Text.literal("   - ").formatted(Formatting.GOLD))
-            .append(Text.literal("명령어를 통해 최대 체력을 아이탬으로 변환할 수 있음(/생체전환 또는 /extract)").formatted(Formatting.AQUA))
+            .append(Text.literal("명령어를 통해 최대 체력을 아이템으로 변환할 수 있음(/생체전환 또는 /extract)\n").formatted(Formatting.AQUA))
             .append(Text.literal("12. ").formatted(Formatting.GOLD))
             .append(Text.literal("랜덤 스폰\n").formatted(Formatting.AQUA))
             .append(Text.literal("13. ").formatted(Formatting.GOLD))
             .append(Text.literal("고대도시에서 노치 사과 확률 대폭 증가\n").formatted(Formatting.AQUA))
             .append(Text.literal("14. ").formatted(Formatting.GOLD))
-            .append(Text.literal("TPA 명령어 사용 가능 (/tpa 또는 /티피요청)").formatted(Formatting.AQUA))
+            .append(Text.literal("TPA 명령어 사용 가능 (/tpa 또는 /티피요청)\n").formatted(Formatting.AQUA))
             .append(Text.literal("15. ").formatted(Formatting.GOLD))
-            .append(Text.literal("벽 투과 (프리캠, 아이탬 하이라이트) 가능하게 하는 모드 금지").formatted(Formatting.AQUA))
+            .append(Text.literal("벽 투과 (프리캠, 아이템 하이라이트) 가능하게 하는 모드 금지\n").formatted(Formatting.AQUA))
             .append(Text.literal("16. ").formatted(Formatting.GOLD))
             .append(Text.literal("오토클릭커 (좌클릭, 클릭 간격이 200ms가 넘는 설정 한정) 금지").formatted(Formatting.AQUA));
     public static final Text NO_DRAGON_EGG_FAIL = Text.literal("드래곤 알을 손에 들고 있지 않습니다.").formatted(Formatting.RED);
@@ -67,7 +67,7 @@ public class Translations {
             .append(Text.literal("\n또는 네더라이트로 교환하려면 /교환 네더라이트"))
             .append(Text.literal("\n또는 도구로 교환하려면 /교환 도구"));
     public static final Text HEALTH_ITEM_NAME = Text.literal("농축된 체력");
-    public static final Text HEALTH_ITEM_LORE = Text.literal("이 아이탬을 사용하여 최대 체력을 1칸 늘릴수 있습니다");
+    public static final Text HEALTH_ITEM_LORE = Text.literal("이 아이템을 사용하여 최대 체력을 1칸 늘릴수 있습니다");
     public static final Text EXTRACT_HEALTH_NOT_ENOUGH_FAIL = Text.literal("최대 체력이 부족합니다").formatted(Formatting.RED);
     public static final Text TOO_MUCH_TOTEMS = Text.literal("토탬을 너무 많이 갖고 있습니다!").formatted(Formatting.RED);
     public static final Text PVP_TIME_END = Text.literal("PVP 중: ").formatted(Formatting.GOLD)

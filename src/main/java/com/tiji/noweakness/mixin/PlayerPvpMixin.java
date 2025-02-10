@@ -27,7 +27,6 @@ public abstract class PlayerPvpMixin {
     @Inject(method = "applyDamage", at = @At("HEAD"))
     private void attacked(ServerWorld world, DamageSource source, float amount, CallbackInfo info) {
         // 플레이어한테 공격 받을시 PVP 모드 활성화
-        No.LOGGER.info("Player {} attacked by {}", this.getGameProfile().getName(), source.getAttacker().getNameForScoreboard());
         if (source.getAttacker() instanceof PlayerEntity) {
             No.pvpTime.put(this.getGameProfile().getId(), System.currentTimeMillis());
         }

@@ -25,11 +25,10 @@ public class No implements ModInitializer {
 	public void onInitialize() {
 		ServerTickEvents.END_SERVER_TICK.register(EventHandlers::onTick);
 		ServerPlayConnectionEvents.DISCONNECT.register(EventHandlers::onPlayerDisconnect);
-		ServerLivingEntityEvents.ALLOW_DEATH.register(EventHandlers::onDeath);
 
         try {
             HomeLocationContainer.createOrLoad();
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException("홈 세이브 로드 실패: ", e);
         }
 

@@ -30,7 +30,8 @@ public class HomeLocationContainer {
                 homeLocations.put(uuid, new Vec3d(x, y, z));
             }
         } else {
-            Files.createFile(saveFile);
+            No.LOGGER.info("home_locations.json 파일이 존재하지 않습니다. 새로 생성합니다.");
+            save();
         }
     }
 
